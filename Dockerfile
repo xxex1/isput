@@ -1,7 +1,9 @@
-FROM python:3.10-slim
+FROM alpine
 
 WORKDIR /app
 
 COPY . .
+
+RUN "apt install -r requirements.txt"
 
 CMD ["python", "app.py"]
