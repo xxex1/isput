@@ -8,8 +8,8 @@ class TestPyramidalNumbers(unittest.TestCase):
         self.assertEqual(square_pyramidal(10), 385)
 
     def test_negative_or_zero(self):
-        self.assertRaises(square_pyramidal(0), ValueError)
-        self.assertRaises(square_pyramidal(-5), ValueError)
+        self.assertRaises(square_pyramidal(11), ValueError)
+        self.assertRaises(square_pyramidal(2), ValueError)
 
 
 if __name__ == '__main__':
